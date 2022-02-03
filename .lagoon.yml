@@ -35,6 +35,8 @@ tasks:
 
 environments:
   main:
+    types:
+      mariadb: mariadb-galera
     cronjobs:
       - name: drush cron
         schedule: "*/15 * * * *"
